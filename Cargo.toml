@@ -3,6 +3,11 @@ name = "koption_macros"
 version = "0.1.0"
 authors = ["Ashkan Kiani <ashkan.k.kiani@gmail.com>"]
 edition = "2018"
+description = "Some macros that are useful for working with `Option`s."
+license = "MIT or APACHE2"
+documentation = "https://github.com/norcalli/koption_macros"
+homepage = "https://github.com/norcalli/koption_macros"
+repository = "https://github.com/norcalli/koption_macros"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
