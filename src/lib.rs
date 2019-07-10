@@ -1,3 +1,4 @@
+#[macro_export]
 macro_rules! or {
     ($head:expr $(=> $tail:expr)*) => (
         $head
@@ -7,6 +8,7 @@ macro_rules! or {
     )
 }
 
+#[macro_export]
 macro_rules! and {
     ($head:expr $(=> $tail:expr)*) => (
         (
@@ -17,6 +19,7 @@ macro_rules! and {
     )
 }
 
+#[macro_export]
 macro_rules! try_ {
     ($($body:stmt);*) => (
         (
