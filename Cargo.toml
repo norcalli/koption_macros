@@ -8,6 +8,7 @@ license = "MIT OR Apache-2.0"
 documentation = "https://github.com/norcalli/koption_macros"
 homepage = "https://github.com/norcalli/koption_macros"
 repository = "https://github.com/norcalli/koption_macros"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
