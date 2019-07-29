@@ -20,7 +20,7 @@ macro_rules! and {
 }
 
 #[macro_export]
-macro_rules! try_ {
+macro_rules! try_opt {
     ($($body:stmt);*) => (
         (
             || -> Option<_> {
@@ -60,7 +60,7 @@ mod tests {
     fn try_works() {
         assert_eq!(
             Some(6),
-            try_! {
+            try_opt! {
                 let x = Some(3);
                 let y = Some(2);
                 x? * y?
@@ -73,7 +73,7 @@ mod tests {
             }),
         };
 
-        let x = try_! { config.log?.level? }.unwrap_or("foo".to_owned());
+        let x = try_opt! { config.log?.level? }.unwrap_or("foo".to_owned());
         assert_eq!(x, "debug");
     }
 }
